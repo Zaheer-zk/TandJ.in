@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    mongoose.set("strictQuery", false); // set the strictQuery option explicitly
+    mongoose.set('strictQuery', false); // set the strictQuery option explicitly
     await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
     });
